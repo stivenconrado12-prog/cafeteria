@@ -1,0 +1,57 @@
+/* Estilos de la cafetería: paleta Monestra (Brunswick Green, Emerald, Polar) */
+:root {
+  --brunswick: #0C4137;
+  --esmeralda: #06D6A0;
+  --polar: #E6FBF6;
+  --texto: #12302a;
+}
+
+body {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 24px 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--polar);
+  color: var(--texto);
+}
+
+h1 {
+  color: var(--brunswick);
+  border-bottom: 4px solid var(--esmeralda);
+  padding-bottom: 8px;
+}
+
+a {
+  color: var(--brunswick);
+  font-weight: bold;
+}
+
+/* Los enlaces de filtro (están dentro de un párrafo) */
+p a {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--brunswick), #0a6b55);
+  color: var(--polar);
+  padding: 4px 12px;
+  border-radius: 16px;
+  text-decoration: none;
+}
+
+p a:hover {
+  background: var(--esmeralda);
+  color: var(--brunswick);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Cada plato del menú */
+li {
+  background: white;
+  margin-bottom: 10px;
+  padding: 12px 16px;
+  border-left: 6px solid var(--esmeralda);
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(12, 65, 55, 0.12);
+}
